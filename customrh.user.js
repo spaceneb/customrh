@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Custom RoutineHub
-// @version      1.1.2
+// @version      1.2.0
 // @description  Make RoutineHub look great!
 // @author       SpaceNeb
 // @match        *://routinehub.co/*
@@ -38,7 +38,7 @@
 			:not(i) {
 				font-family: 'Roboto', sans-serif !important;
 			}
-			.heart-count, .heart-count:hover, .reply-feedback, .reply-feedback:hover {
+			.heart-count, .heart-count:hover, .reply-feedback, .reply-feedback:hover, .delete-feedback, .delete-feedback:hover, .edit-feedback, .edit-feedback:hover {
 				color:var(--color12) !important;
 			}
 			.button.is-light {
@@ -160,11 +160,7 @@
 		function search(search, tag) {
 			for (i = 0; i < document.getElementsByTagName('strong').length; i++) {
 				if (document.getElementsByTagName('strong')[i].innerText == search) {
-					if (window.location.href.search('notifications') != -1) {
-						document.getElementsByTagName('strong')[i].parentElement.parentElement.innerHTML = '<a href="javascript:void(0)"><strong>' + search + '</strong></a>&nbsp;<a href="javascript:void(0)"><span class="tag is-primary">' + tag + '</span></a>';
-					} else {
-						document.getElementsByTagName('strong')[i].parentElement.parentElement.innerHTML = '<a href="https://routinehub.co/user/' + search.replace('@','') + '"><strong>' + search + '</strong></a>&nbsp;<span class="tag is-primary">' + tag + '</span>';
-					}
+					document.getElementsByTagName('strong')[i].parentElement.innerHTML = document.getElementsByTagName('strong')[i].parentElement.innerHTML + '&nbsp;<span class="tag is-primary">' + tag + '</span>';
 				}
 			}
 		}

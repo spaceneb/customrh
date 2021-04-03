@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Custom RoutineHub
-// @version      1.0.3
+// @version      1.1.0
 // @description  Make RoutineHub look great!
 // @author       SpaceNeb
 // @match        *://routinehub.co/*
@@ -41,7 +41,7 @@
 				font-family: 'Roboto', sans-serif !important;
 			}
 			.heart-count, .heart-count:hover, .reply-feedback, .reply-feedback:hover {
-				color:var(--color2) !important;
+				color:var(--color12) !important;
 			}
 			.button.is-light {
 				background: var(--color5);

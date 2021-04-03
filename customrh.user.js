@@ -39,9 +39,8 @@
 			:not(i) {
 				font-family: 'Roboto', sans-serif !important;
 			}
-
-			.custom_rh_color {
-				color: var(#fff) !important;
+			.heart-count, .heart-count:hover, .reply-feedback, .reply-feedback:hover {
+				color:var(--color2) !important;
 			}
 			.shortcut-icon {
 				background: none !important;

@@ -52,12 +52,12 @@
 				font-weight: bold !important;
 			}
 			a.is-dark:link, a.is-dark:hover, a.is-dark:visited, a.is-dark:active, .is-dark {
-				background: var(--color2) !important;
-				color: var(--color3) !important;
+				background: var(--color2);
+				color: var(--color3);
 			}
 			a.is-primary:link, a.is-primary:hover, a.is-primary:visited, a.is-primary:active, .is-primary {
-				background: var(--color6) !important;
-				color: var(--color2) !important;
+				background: var(--color6);
+				color: var(--color2);
 			}
 			strong, select, p, .table th, th, thead, .table {
 				color: var(--color4);
@@ -159,7 +159,7 @@
 					if (window.location.href.search('notifications') != -1) {
 						document.getElementsByTagName('strong')[i].parentElement.parentElement.innerHTML = '<a href="javascript:void(0)"><strong>' + search + '</strong></a>&nbsp;<a href="javascript:void(0)"><span class="tag is-primary">' + tag + '</span></a>';
 					} else {
-						document.getElementsByTagName('strong')[i].parentElement.parentElement.innerHTML = '<a href="https://routinehub.co/user/' + search + '"><strong>' + search + '</strong></a>&nbsp;<span class="tag is-primary">' + tag + '</span>';
+						document.getElementsByTagName('strong')[i].parentElement.parentElement.innerHTML = '<a href="https://routinehub.co/user/' + search.replace('@','') + '"><strong>' + search + '</strong></a>&nbsp;<span class="tag is-primary">' + tag + '</span>';
 					}
 				}
 			}

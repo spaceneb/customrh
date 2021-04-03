@@ -63,7 +63,7 @@
 				background: var(--color6);
 				color: var(--color2);
 			}
-			strong, select, p, .table th, th, thead, .table, p.subtitle {
+			strong, select, p, .table th, th, thead, .table, .subtitle {
 				color: var(--color4);
 			}
 			option, .input, .textarea, .file-label, .table, .file-cta, .card-header-title, .card_content, .card {

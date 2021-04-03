@@ -81,7 +81,7 @@
 			a:hover, a:link, a:visited, a:active {
 				color: var(--color9) !important;
 			}
-			.navbar-brand, .navbar-menu, .navbar, .ethad-container {
+			.navbar-brand, .navbar-menu, .navbar, .ethad-container, div.dropdown-content {
 				background: var(--color0) !important;
 			}
 			a.navbar-item:hover {
